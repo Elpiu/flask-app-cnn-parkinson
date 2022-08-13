@@ -6,6 +6,9 @@ L'applicazione permtte di caricare un immagine e di farla classificare dal cnn.
 
 ***Puoi provare l'applicazione [QUI](https://app-cnn-flask.herokuapp.com/).***
 
+### Prova l'applicazione
+Qui puoi trovare alcune immagini di esempio [QUI](https://github.com/Elpiu/flask-app-cnn-parkinson/tree/main/testImages).
+Le cartelle rappresentano le categorie del classificatore.
 
 ### Cambiare modello
 
