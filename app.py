@@ -11,7 +11,7 @@ UPLOAD_FOLDER = "uploads"
 STATIC_FOLDER = "static"
 
 # Carica il modello e setting della size di imamgine
-cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "my_model.h5")
+cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "my_model2.h5")
 IMAGE_SIZE = (150, 150)
 
 # Preprocessing dell'immagine
@@ -41,7 +41,7 @@ def classify(model, image_path):
 
     #Le cinque classi di predizione
     prob = cnn_model.predict(preprocessed_imgage)
-    label = ["No Parkinson", "Inzio della malattia",
+    label = ["No Parkinson",
              "Avanzamento lieve", "Avanzamento intermedio", "Utlimo Stadio della malattia"]
     xValues = prob[0]
     result = max(enumerate(xValues), key=(lambda x: x[1]))
