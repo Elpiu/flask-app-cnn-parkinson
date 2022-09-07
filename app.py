@@ -39,7 +39,7 @@ def classify(model, image_path):
         preprocessed_imgage, (1, IMAGE_SIZE[0], IMAGE_SIZE[1], 3)
     )
 
-    #Le cinque classi di predizione
+    #Le quattro classi di predizione
     prob = cnn_model.predict(preprocessed_imgage)
     label = ["No Parkinson",
              "Avanzamento lieve", "Avanzamento intermedio", "Utlimo Stadio della malattia"]
